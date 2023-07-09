@@ -79,7 +79,7 @@ def verify_hash(username, password):
 @app.route('/login/v2', methods=['GET', 'POST'])
 def login_v2():
     error = None
-    if request.method == 'POST':
+    if request.method == 'POST':e
         if verify_hash(request.form['username'], request.form['password']):
             error = 'login success'
         else:
